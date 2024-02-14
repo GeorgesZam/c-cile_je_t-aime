@@ -34,7 +34,7 @@ def display_counter():
     st.write(f"{time_difference.days} jours, {time_difference.seconds // 3600} heures, "
              f"{(time_difference.seconds // 60) % 60} minutes et {time_difference.seconds % 60} secondes.")
 
-display_counter()
+
 
 # Mettre à jour le compteur toutes les secondes
 while True:
