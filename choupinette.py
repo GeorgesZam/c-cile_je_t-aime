@@ -14,8 +14,6 @@ image = Image.open(image_path)
 st.image(image, caption="Nous ❤️")
 """
 # Jouer une chanson
-st.write("Notre chanson préférée :")
-url_chanson = "https://youtu.be/v8oqbWrP1QY"
-st.audio(url_chanson)
-
-
+st.write("Notre chanson préférée en vidéo :")
+url_video = "https://www.youtube.com/watch?v=v8oqbWrP1QY"
+st.video(url_video)
