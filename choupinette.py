@@ -20,7 +20,7 @@ st.video(url_video)
 #compteur
 
 # Définir la date de début de la relation
-start_date = datetime.datetime(2023, 10, 1)
+start_date = datetime.datetime(2022, 10, 1)
 
 # Calculer la différence de temps
 def calculate_time_difference(start_date):
