@@ -12,9 +12,12 @@ message = "Ma choupinette, je te souhaite une merveilleuse Saint-Valentin. Voici
 st.write(message)
 
 # Jouer une chanson
+
 st.write("Notre chanson préférée en vidéo :")
 url_video = "https://www.youtube.com/watch?v=v8oqbWrP1QY"
 st.video(url_video)
+
+#compteur
 
 # Définir la date de début de la relation
 start_date = datetime.datetime(2022, 10, 1)
@@ -32,8 +35,10 @@ def display_counter():
     st.write(f"{time_difference.days} jours, {time_difference.seconds // 3600} heures, "
              f"{(time_difference.seconds // 60) % 60} minutes et {time_difference.seconds % 60} secondes.")
 
-# Actualiser le compteur toutes les secondes
-st_autorefresh(interval=1000, key="counter")
 
-# Afficher le compteur initialement
-display_counter()
+
+# Mettre à jour le compteur toutes les secondes
+while True:
+    display_counter()
+    time.sleep(1)
+    st.experimental_rerun()
