@@ -41,7 +41,7 @@ def display_counter():
              f"{(time_difference.seconds // 60) % 60} minutes et {time_difference.seconds % 60} secondes.")
 
 # Code pour afficher un nouveau message d'amour toutes les 10 secondes
-file_path = 'messages.csv'  # Chemin vers votre fichier CSV
+file_path = 'phrase.csv'  # Chemin vers votre fichier CSV
 
 def display_love_message():
     message = get_random_message(file_path)
